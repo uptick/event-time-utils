@@ -16,7 +16,7 @@ formatted as a millisecond integer.
 
 ### chronoEventsComparer
 
-Chrono events comparer is used for sorting events by start time:
+`chronoEventsComparer` is used for sorting events by start time:
 
 ```javascript
 import { chronoEventsComparer } from 'event-time-utils'
@@ -47,7 +47,7 @@ console.log(sortedEvents)
 
 ### activeTime
 
-Active time tells you the amount of total time spent within a set of events, given a `begins` and
+`activeTime` tells you the amount of total time spent within a set of events, given a `begins` and
 `ends` bound. Overlapping times are only counted once.
 
 For this function to work, events require a key-serialisable unique `id` attribute. The time value
@@ -87,7 +87,7 @@ console.log(time)
 
 ### eventsInRange
 
-Events in range returns a filtered set of events that fall within a specified `begins` and `ends`
+`eventsInRange` returns a filtered set of events that fall within a specified `begins` and `ends`
 bound.
 
 ```javascript
@@ -121,7 +121,7 @@ console.log(todaysEvents)
 
 ### stackEvents
 
-Stack events returns a mutated set of events with an additional `stackIndex` attribute, with any
+`stackEvents` returns a mutated set of events with an additional `stackIndex` attribute, with any
 overlapping events placed on a higher stack.
 
 The input events can be supplied with their own `stackIndex` attribute, so all other events will
@@ -161,13 +161,13 @@ console.log(
 
 ### nearestTime
 
-Nearest time rounds a given time value to the nearest given time unit
+`nearestTime` rounds a given time value to the nearest given time unit
 
 ```javascript
 import { nearestTime } from 'event-time-utils'
 import moment from 'moment'
 
-let vagueTime = +moment().set({hour: 7, minute: 7}).startOf('minute').format('x')
+let vagueTime = +moment().set({hour: 7, minute: 7,}).startOf('minute').format('x')
 let roundedTime = nearestTime(vagueTime, +moment.duration({minutes: 15,}))
 
 console.log(
