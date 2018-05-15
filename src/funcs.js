@@ -79,6 +79,9 @@ function eventsInRange(events, starts, ends) {
 }
 
 function stackEvents(events, margin) {
+  if (!margin) {
+    margin = 0
+  }
   const stackedEvents = [...events]
   stackedEvents.map((event, eventIndex) => {
     const newEvent = {
