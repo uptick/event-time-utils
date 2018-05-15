@@ -23,8 +23,8 @@ formatted as a millisecond integer.
 `chronoEventsComparer` is used for sorting events by start time.
 
 ```javascript
-import { chronoEventsComparer } from 'event-time-utils'
 import moment from 'moment'
+import { chronoEventsComparer } from 'event-time-utils'
 
 let events = [
   {
@@ -58,8 +58,8 @@ For this function to work, events require a key-serialisable unique `id` attribu
 is returned as a simplified two decimal place string count of hours.
 
 ```javascript
-import { activeTime } from 'event-time-utils'
 import moment from 'moment'
+import { activeTime } from 'event-time-utils'
 
 let events = [
   {
@@ -95,8 +95,8 @@ console.log(time)
 bound.
 
 ```javascript
-import { eventsInRange } from 'event-time-utils'
 import moment from 'moment'
+import { eventsInRange } from 'event-time-utils'
 
 let events = [
   {
@@ -134,8 +134,8 @@ stack around them.
 Optionally, you can provide a `margin` to which events will stack even if they don't overlap.
 
 ```javascript
-import { stackEvents } from 'event-time-utils'
 import moment from 'moment'
+import { stackEvents } from 'event-time-utils'
 
 let events = [
   {
@@ -168,8 +168,8 @@ console.log(
 `nearestTime` rounds a given time value to the nearest given time unit.
 
 ```javascript
-import { nearestTime } from 'event-time-utils'
 import moment from 'moment'
+import { nearestTime } from 'event-time-utils'
 
 let vagueTime = +moment().set({hour: 7, minute: 7,}).startOf('minute').format('x')
 let roundedTime = nearestTime(vagueTime, +moment.duration({minutes: 15,}))
