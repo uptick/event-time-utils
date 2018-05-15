@@ -1,6 +1,6 @@
 {
   "name": "event-time-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of utilities based around events with begins/ends timestamps",
   "main": "index.js",
   "scripts": {
