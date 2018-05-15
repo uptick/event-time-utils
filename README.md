@@ -1,4 +1,8 @@
 # event-time-utils
+
+[![npm version](https://badge.fury.io/js/event-time-utils.svg)](http://badge.fury.io/js/event-time-utils)
+![Downloads](http://img.shields.io/npm/dm/event-time-utils.svg?style=flat)
+
 A collection of utilities based around events with begins/ends timestamps
 
 ## Installation
@@ -161,7 +165,7 @@ console.log(
 
 ### nearestTime
 
-`nearestTime` rounds a given time value to the nearest given time unit
+`nearestTime` rounds a given time value to the nearest given time unit.
 
 ```javascript
 import { nearestTime } from 'event-time-utils'
