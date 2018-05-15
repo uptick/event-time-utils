@@ -20,7 +20,7 @@ formatted as a millisecond integer.
 
 ### chronoEventsComparer
 
-`chronoEventsComparer` is used for sorting events by start time:
+`chronoEventsComparer` is used for sorting events by start time.
 
 ```javascript
 import { chronoEventsComparer } from 'event-time-utils'
